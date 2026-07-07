@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashing Text Test</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Define the flashing element */
+        .flash-text {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff3b30;
+            /* Adjust the duration (1s) to make it faster or slower */
+            animation: blinker 1s linear infinite; 
+        }
+
+        /* The animation rules changing opacity from full to hidden */
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flash-text">TESTING FLASHING TEXT</div>
+
+</body>
+</html>
